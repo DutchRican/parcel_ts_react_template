@@ -1,5 +1,12 @@
 # Simple starter template for React, TypeScript and Parcel 
 
+## new repo setup
+
+```cli
+git init <your_project>
+cd <your_project>
+git pull https://github.com/DutchRican/parcel_ts_react_template.git
+```
 
 ## local dev
 
