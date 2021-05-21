@@ -1,0 +1,32 @@
+{
+  "name": "parcel_ts_react_template",
+  "version": "1.0.0",
+  "description": "simple starter for react, parcel and typescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server/index.js",
+    "build-watch": "parcel ./src/server/public/index.html",
+    "start-watch": "nodemon ./src/server/index.js",
+    "dev": "concurrently --kill-others \"npm run start-watch\" \"npm run build-watch\"",
+    "build": "parcel build ./src/server/public/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^2.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^15.6.0",
+    "@types/react": "^17.0.6",
+    "@types/react-dom": "^17.0.5",
+    "@types/webpack-env": "^1.16.0",
+    "concurrently": "^6.1.0",
+    "nodemon": "^2.0.7",
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.2.4"
+  }
+}
