@@ -3,9 +3,12 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
-app.use(createProxyMiddleware('/api', {
-    target: 'http://localhost:3000'
-}));
+app.use('/api', createProxyMiddleware(
+    {
+        target: 'http://www.example.org',
+        changeOrigin: true
+    }
+));
 
 // app.use(express.static('dist'));
 app.use('/', express.static('dist'))
