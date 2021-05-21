@@ -8,7 +8,8 @@
     "build-watch": "parcel ./src/server/public/index.html",
     "start-watch": "nodemon ./src/server/index.js",
     "dev": "concurrently --kill-others \"npm run start-watch\" \"npm run build-watch\"",
-    "build": "parcel build ./src/server/public/index.html"
+    "build": "parcel build ./src/server/public/index.html",
+    "create-certs": "openssl req -subj '/CN=yourUser.com/O=USER/C=US' -new -newkey rsa:2048 -sha256 -days 365 -nodes -x509 -keyout ./src/server/certs/server.key -out ./src/server/certs/server.cert"
   },
   "keywords": [],
   "author": "",
