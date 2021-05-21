@@ -21,3 +21,12 @@ docker-compose up
 ```
 
 
+### nvm
+
+Using nvm? just do a `nvm use`  
+
+---
+
+### known issues
+
+npm7 worked fine locally, but not in docker for some reason. 
