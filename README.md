@@ -6,6 +6,7 @@
 git init <your_project>
 cd <your_project>
 git pull https://github.com/DutchRican/parcel_ts_react_template.git
+npm i
 ```
 
 ## local dev
